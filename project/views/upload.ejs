@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+           
+        <div style="background-color:red; color: white; height:100px;">
+                <h1>Product Records Available</h1>
+        </div>
+        <br><br>
+        <table border ="5px solid black">
+            <tr>
+                <th>Productname</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Picture</th>
+            </tr>
+            <%for(i=0;i<dara.length;i++){%>
+            <tr>
+               
+                    <th><%=dara[i].name%></th>
+                    <th><%=dara[i].price%></th>
+                    <th><%=dara[i].desc%></th>
+                    <th><img src=<%=dara[i].file%>></th>
+                    <th><a href="/delete">Delete</a></th>
+                    
+                    
+            </tr>
+            <%}%>
+            
+        </table>
+        
+        
+    </body>
+</html>

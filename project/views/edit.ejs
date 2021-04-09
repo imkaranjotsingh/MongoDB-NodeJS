@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div style="background-color:red; color:white; height:100px">
+        <h1>Edit data</h1>
+        </div>
+        
+        <form action = "/edit" method = "POST">
+           
+        Username :<input type = "text"  name = "name" value ='<%=res['name']%>'><br>
+       Password:<input type="password" name ="password" value='<%=res['password']%>'><br>
+       Address :<input type="text" name ="address" value = '<%=res['address']%>'><br>
+       City:<input type="text"  name="city" value ='<%=res['city']%>'><br>
+       Email:<input type="text" name="email"  value = '<%=res['email']%>'><br><br>
+        
+        <input type="submit" value = "Update">
+        
+        </form>
+    </body>
+</html>

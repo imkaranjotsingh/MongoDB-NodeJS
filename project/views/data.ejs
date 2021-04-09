@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div style = "background-color: blue; color :white; height: 100px">
+        <h2>Records Here!</h2>
+        </div>
+        <br>
+        <a href = "/product">AddProduct</a>
+        <br>
+        <form action ="/data" method ="POST">
+       <table border = "4px"><br>
+           <tr>
+               <th>Username</th>
+               <th>Password</th>
+               <th>Address</th>
+               <th>City</th>
+               <th>Email_Id</th>
+           </tr>
+           <tr>
+      <td> <%=data.name%></td>
+       <td><%=data.password%></td>
+           <td><%=data.address%></td>
+       <td><%=data.city%></td>
+       <td><%=data.email%></td>
+    
+        <td><a href = "/edit/<%=data.id%>">Edit</a></td>
+        <td><a href="/delete/<%=data.id%>">Delete</a></td>
+    </tr>
+    </table>
+</form>
+    </body>
+</html>

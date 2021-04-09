@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>See all records of Users!</h1>
+       
+        <table border = 5px solid black>
+            <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Email</th>
+        </tr>
+        <%for(i=0;i<date.length;i++){%>
+            <tr>
+                <th><%=date[i].name%></th>
+                <th><%=date[i].password%></th>
+                <th><%=date[i].address%></th>
+                <th><%=date[i].city%></th>
+                <th><%=date[i].email%></th>
+                <th><a href="/update">Update</a></th>
+                <th><a href="/delete">Delete</a></th>
+            </tr>
+            <%}%>
+        </table>
+    </body>
+</html>
